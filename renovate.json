@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "baseBranches": ["dev"],
+  "prHourlyLimit": 9,
+  "bumpVersion": "prerelease",
+  "packageRules": [
+    {
+      "excludePackagePatterns": [ "Extensions" ],
+      "matchPackagePrefixes": [ "DisCatSharp" ],
+      "groupName": "discatsharp",
+	  "automerge": false,
+	  "enabled": false
+    },
+    {
+      "managers": ["github-actions"],
+      "enabled": false
+    }
+  ],
+  "git-submodules": {
+    "enabled": true
+  }
+}
