@@ -1,0 +1,6 @@
+[submodule "Dependencies/DisCatSharp"]
+	path = Dependencies/DisCatSharp
+	url = https://github.com/Aiko-IT-Systems/DisCatSharp
+[submodule "Dependencies/UniversalExtensions"]
+	path = Dependencies/UniversalExtensions
+	url = https://github.com/Fortunevale/Xorog.UniversalExtensions

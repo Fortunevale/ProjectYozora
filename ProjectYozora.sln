@@ -11,10 +11,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
 		renovate.json = renovate.json
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCatSharp", "Dependencies\DisCatSharp\DisCatSharp\DisCatSharp.csproj", "{C15A2695-D6D8-4867-BB60-BCE9F6920035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCatSharp.Common", "Dependencies\DisCatSharp\DisCatSharp.Common\DisCatSharp.Common.csproj", "{23A6F4AC-B810-43D3-897D-C2EA90FF7682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCatSharp.Interactivity", "Dependencies\DisCatSharp\DisCatSharp.Interactivity\DisCatSharp.Interactivity.csproj", "{9CE3C58A-A954-4607-A1A4-C78E025EDFF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCatSharp.ApplicationCommands", "Dependencies\DisCatSharp\DisCatSharp.ApplicationCommands\DisCatSharp.ApplicationCommands.csproj", "{77F85956-C17D-4767-9B17-276354FC3595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xorog.UniversalExtensions", "Dependencies\UniversalExtensions\Xorog.UniversalExtensions.csproj", "{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,8 +43,35 @@ Global
 		{292E83D3-07CF-4FC6-9D7D-71C4B8AF43DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{292E83D3-07CF-4FC6-9D7D-71C4B8AF43DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{292E83D3-07CF-4FC6-9D7D-71C4B8AF43DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15A2695-D6D8-4867-BB60-BCE9F6920035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15A2695-D6D8-4867-BB60-BCE9F6920035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15A2695-D6D8-4867-BB60-BCE9F6920035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15A2695-D6D8-4867-BB60-BCE9F6920035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A6F4AC-B810-43D3-897D-C2EA90FF7682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A6F4AC-B810-43D3-897D-C2EA90FF7682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A6F4AC-B810-43D3-897D-C2EA90FF7682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A6F4AC-B810-43D3-897D-C2EA90FF7682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE3C58A-A954-4607-A1A4-C78E025EDFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE3C58A-A954-4607-A1A4-C78E025EDFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE3C58A-A954-4607-A1A4-C78E025EDFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE3C58A-A954-4607-A1A4-C78E025EDFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F85956-C17D-4767-9B17-276354FC3595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F85956-C17D-4767-9B17-276354FC3595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F85956-C17D-4767-9B17-276354FC3595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F85956-C17D-4767-9B17-276354FC3595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7}.Debug|Any CPU.Build.0 = Debug|x64
+		{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7}.Release|Any CPU.ActiveCfg = Release|x64
+		{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7}.Release|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C15A2695-D6D8-4867-BB60-BCE9F6920035} = {61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}
+		{23A6F4AC-B810-43D3-897D-C2EA90FF7682} = {61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}
+		{9CE3C58A-A954-4607-A1A4-C78E025EDFF5} = {61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}
+		{77F85956-C17D-4767-9B17-276354FC3595} = {61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}
+		{01FB60B9-6B7A-4AC4-83D6-45E9DD3573A7} = {61EEAE54-F2B0-4211-BC22-8F93BCEBB78E}
 	EndGlobalSection
 EndGlobal
